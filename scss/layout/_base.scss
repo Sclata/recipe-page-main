@@ -1,0 +1,9 @@
+@use "../abstracts/colors";
+@use "../abstracts/breakpoints";
+
+body {
+    background-color: colors.$stone-light;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,267 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "young-serif";
+  src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+@font-face {
+  font-family: "outfit";
+  src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+.wrapper {
+  background-color: white;
+  max-width: 736px;
+}
+
+.wrapper .content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+@media (375px < width) {
+  .wrapper {
+    margin-top: 128px;
+    margin-bottom: 128px;
+    margin-left: 48px;
+    margin-right: 48px;
+    border-radius: 12px;
+  }
+  .wrapper .hero {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+  }
+  .wrapper .content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  img {
+    border-radius: 12px;
+  }
+}
+body {
+  background-color: #f3e5d7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.header__title {
+  font-family: "young-serif";
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 100%;
+}
+.header__description {
+  font-family: "outfit";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  padding-top: 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.prep {
+  background-color: #FFF7FB;
+  border-radius: 12px;
+  padding: 24px;
+  font-family: "outfit";
+  font-size: 16px;
+  font-weight: 400;
+}
+.prep__header {
+  color: #7A284E;
+  font-family: "outfit";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+.prep__list {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-inline-start: 24px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.prep__text {
+  position: relative;
+  left: 20px;
+}
+.prep__item::marker {
+  color: #7A284E;
+}
+.prep__metric {
+  font-family: "outfit";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.ingred {
+  font-family: "outfit";
+  font-weight: 400;
+  font-size: 16px;
+  border-bottom: 1px lightgrey solid;
+}
+.ingred__header {
+  font-family: "young-serif";
+  font-size: 28px;
+  font-weight: 400;
+  color: #854632;
+  margin-bottom: 24px;
+  line-height: 100%;
+}
+.ingred__list {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-inline-start: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+.ingred__text {
+  position: relative;
+  left: 12px;
+}
+.ingred__item::marker {
+  color: #854632;
+}
+
+.instruct {
+  font-family: "outfit";
+  font-weight: 400;
+  font-size: 16px;
+  border-bottom: 1px lightgrey solid;
+}
+.instruct__header {
+  font-family: "young-serif";
+  font-size: 28px;
+  font-weight: 400;
+  color: #854632;
+  margin-bottom: 24px;
+  line-height: 100%;
+}
+.instruct__list {
+  list-style-type: number;
+  list-style-position: outside;
+  padding-inline-start: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+.instruct__step {
+  font-weight: 700;
+}
+.instruct__text {
+  position: relative;
+  left: 16px;
+}
+.instruct__item::marker {
+  color: #854632;
+  font-weight: 700;
+}
+
+.nutr {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.nutr__header {
+  font-family: "young-serif";
+  font-size: 28px;
+  font-weight: 400;
+  color: #854632;
+  line-height: 100%;
+}
+.nutr__table {
+  columns: 2;
+  width: 100%;
+  font-family: "outfit";
+  font-size: 16px;
+  line-height: 150%;
+  table-layout: fixed;
+}
+.nutr__quantity {
+  color: #854632;
+  font-weight: bold;
+}
+.nutr__metric {
+  padding-left: 32px;
+}
+
+td {
+  border-bottom: 1px lightgrey solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/*# sourceMappingURL=recipe-style.css.map */

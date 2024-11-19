@@ -1,0 +1,38 @@
+@use "../abstracts/breakpoints";
+
+.wrapper {
+    background-color: white;
+    max-width: 736px;
+}
+
+.wrapper .content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+@media (breakpoints.$breakpoint-mobile < width) {
+    .wrapper {
+        margin-top: 128px;
+        margin-bottom: 128px;
+        margin-left: 48px;
+        margin-right: 48px;
+        border-radius: 12px;
+    }
+
+    .wrapper .hero {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+    }
+
+    .wrapper .content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    img {
+        border-radius: 12px;
+    }
+}

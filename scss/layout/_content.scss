@@ -1,0 +1,197 @@
+@use "../abstracts/colors";
+@use "../base/font-face";
+
+$ltr-spacing: 0px;
+$ln-hght-reg: 100%;
+$ln-hght-large: 150%;
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    &__title {
+        font-family: "young-serif";
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: $ltr-spacing;
+        line-height: $ln-hght-reg;
+    }
+    &__description {
+        font-family: "outfit";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: $ln-hght-large;
+        padding-top: 24px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.prep {
+    background-color: colors.$rose-light;
+    border-radius: 12px;
+    padding: 24px;
+    font-family: "outfit";
+    font-size: 16px;
+    font-weight: 400;
+
+    &__header {
+        color: colors.$rose-dark;
+        font-family: "outfit";
+        font-weight: 600;
+        font-size: 20px;
+        line-height: $ln-hght-reg;
+        letter-spacing: $ltr-spacing;
+    }
+
+    &__list {
+        list-style-type: disc;
+        list-style-position: outside;
+        padding-inline-start: 24px;
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__text {
+        position: relative;
+        left: 20px;
+    }
+
+    &__item::marker {
+        color: colors.$rose-dark;
+    }
+
+    &__metric {
+        font-family: "outfit";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: $ln-hght-large;
+    }
+}
+
+.ingred {
+    font-family: "outfit";
+    font-weight: 400;
+    font-size: 16px;
+    border-bottom: 1px lightgrey solid;
+
+    &__header {
+        font-family: "young-serif";
+        font-size: 28px;
+        font-weight: 400;
+        color: colors.$brown;
+        margin-bottom: 24px;
+        line-height: $ln-hght-reg;
+    }
+    
+    &__list {
+        list-style-type: disc;
+        list-style-position: outside;
+        padding-inline-start: 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        line-height: $ln-hght-large;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        position: relative;
+        left: 12px;
+    }
+
+    &__item::marker {
+        color: colors.$brown;
+    }
+}
+
+.instruct {
+    font-family: "outfit";
+    font-weight: 400;
+    font-size: 16px;
+    border-bottom: 1px lightgrey solid;
+
+    &__header {
+        font-family: "young-serif";
+        font-size: 28px;
+        font-weight: 400;
+        color: colors.$brown;
+        margin-bottom: 24px;
+        line-height: $ln-hght-reg;
+    }
+    
+    &__list {
+        list-style-type: number;
+        list-style-position: outside;
+        padding-inline-start: 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        line-height: $ln-hght-large;
+        margin-bottom: 32px;
+    }
+
+    &__step {
+        font-weight: 700;
+    }
+
+    &__text {
+        position: relative;
+        left: 16px;
+    }
+
+    &__item::marker {
+        color: colors.$brown;
+        font-weight: 700;
+    }
+}
+
+.nutr {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    &__header {
+        font-family: "young-serif";
+        font-size: 28px;
+        font-weight: 400;
+        color: colors.$brown;
+        line-height: $ln-hght-reg;
+    }
+
+    &__table {
+        columns: 2;
+        width: 100%;
+        font-family: "outfit";
+        font-size: 16px;
+        line-height: $ln-hght-large;
+        table-layout: fixed;
+    }
+
+    &__quantity {
+        color: colors.$brown;
+        font-weight: bold;
+    }
+
+    &__metric {
+        padding-left: 32px;
+    }
+}
+
+td {
+    border-bottom: 1px lightgrey solid;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
